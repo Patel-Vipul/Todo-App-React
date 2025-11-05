@@ -1,16 +1,64 @@
-# React + Vite
+# 📝 Todo App (React + Context API + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Todo App I created while learning React.  
+The main goal of this project was to understand state management using **Context API**, practice **React Hooks**, and style UI using **Tailwind CSS**.  
+I kept the UI clean and added a few useful features to make it feel like a real task manager instead of just a basic todo list.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo  
+🔗 **https://todoapp-reactt.vercel.app/**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- Add, Edit and Delete todos
+- Mark tasks as complete / incomplete
+- **Search** tasks by name
+- **Filter** todos (All / Active / Completed)
+- **Priority levels** (High / Medium / Low)
+- **Progress bar** to track how much is done
+- **Light / Dark theme toggle**
+- Tasks are stored using **LocalStorage**, so they stay even after refresh
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Used
+
+- **React**
+- **Context API** (for global state)
+- **Tailwind CSS** (for styling)
+- **Vite**
+- **LocalStorage** (for persistence)
+
+---
+
+## 📚 What I Learned
+
+- How to use `useState` and `useEffect`
+- Managing shared state with **Context API**
+- Preventing unnecessary re-renders with **useMemo**
+- Making UI responsive using Tailwind utility classes
+- Saving and loading data from LocalStorage
+
+---
+
+## ⚙️ Run Locally
+
+Clone the project:
+
+```bash
+git clone https://github.com/Patel-Vipul/Todo-App-React.git
+cd Todo-App-React
+npm install
+npm run dev
+```
+
+---
+
+✨ Author
+
+Vipul Patel
+
+---
