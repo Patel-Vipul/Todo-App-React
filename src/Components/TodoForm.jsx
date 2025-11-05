@@ -29,7 +29,7 @@ function TodoForm() {
 
       {/* Priority Select  */}
       <select
-      className="w-fit border border-black/10 px-2 bg-white/20"
+      className="w-fit border border-black/10 px-2 bg-white/20 cursor-pointer"
       value={priority}
       onChange={(e) => setPriority(e.target.value)}
       >
@@ -38,7 +38,7 @@ function TodoForm() {
         <option value="low">Low 🟢</option>
       </select>
 
-      <button type="submit" className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0 ">
+      <button type="submit" className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0 cursor-pointer">
         Add
       </button>
     </form>

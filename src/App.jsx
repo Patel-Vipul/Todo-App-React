@@ -116,7 +116,7 @@ useEffect(() => {
             <div className="inline-flex bg-white/10 backdrop-blur-sm rounded-full p-1 gap-1">
               <button
                 onClick={() => setFilter("all")}
-                className={`px-4 py-1 rounded-full text-sm font-medium transition
+                className={`px-4 py-1 rounded-full text-sm font-medium transition cursor-pointer  
       ${
         filter === "all"
           ? "bg-blue-500 text-white"
@@ -127,7 +127,7 @@ useEffect(() => {
 
               <button
                 onClick={() => setFilter("active")}
-                className={`px-4 py-1 rounded-full text-sm font-medium transition
+                className={`px-4 py-1 rounded-full text-sm font-medium transition cursor-pointer
       ${
         filter === "active"
           ? "bg-blue-500 text-white"
@@ -138,7 +138,7 @@ useEffect(() => {
 
               <button
                 onClick={() => setFilter("completed")}
-                className={`px-4 py-1 rounded-full text-sm font-medium transition
+                className={`px-4 py-1 rounded-full text-sm font-medium transition cursor-pointer
       ${
         filter === "completed"
           ? "bg-blue-500 text-white"
@@ -154,7 +154,7 @@ useEffect(() => {
             <p className="text-center text-sm text-gray-200 mb-1">
               Completed {completedTodos} of {totalTodos} Tasks ({progress}%)
             </p>
-            <div className="w-full bg-white/20 h-3 rounded-full overflow-hidden">
+            <div className="w-full bg-white/20 h-3 rounded-full overflow-hidden cursor-not-allowed">
               <div
             style={{width: `${progress}%`}}
             className="h-full bg-green-400 transition-all duration-300">

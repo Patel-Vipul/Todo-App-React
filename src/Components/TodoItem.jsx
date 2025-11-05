@@ -6,7 +6,7 @@ function TodoItem({ todo }){
     const [isTodoEditable, setIsTodoEditable] = useState(false);
     const [todoMsg, setTodoMsg] = useState(todo.todo)
 
-    const {deleteTodo, updateTodo, toggleComplete ,priority} = useTodo();
+    const {deleteTodo, updateTodo, toggleComplete } = useTodo();
     
     const toggleCompleted = () => {
         toggleComplete(todo.id)
@@ -17,13 +17,6 @@ function TodoItem({ todo }){
         updateTodo(todo.id,{todo: todoMsg.trim()})
         setIsTodoEditable(false)
     }
-
-    const badge =
-  todo.priority === "high"
-    ? "bg-red-500/20 text-red-300 border-red-400/30"
-    : todo.priority === "medium"
-    ? "bg-yellow-500/20 text-yellow-300 border-yellow-400/30"
-    : "bg-green-500/20 text-green-300 border-green-400/30";
 
     return(
         <div className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300 text-black ${
@@ -83,7 +76,7 @@ function TodoItem({ todo }){
             <select
             value={todo.priority || "medium"}
             onChange={(e) => updateTodo(todo.id,{priority:e.target.value})}
-            className="border border-black/10 rounded-md bg-transparent text-xs px-1 py-0.5">
+            className="border border-black/10 rounded-md bg-transparent text-xs px-1 py-0.5 cursor-pointer">
                 <option value="high">🔴</option>
                 <option value="medium">🟡</option>
                 <option value="low">🟢</option>
